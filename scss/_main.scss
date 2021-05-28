@@ -2,8 +2,8 @@
 main {
     @include column;
     .hero {
+        margin-bottom: 9.375em;
         .hero-picture {
-            margin-bottom: 9.375em;
             position: relative; }
         .hero-content {
             width: 27.8125em;

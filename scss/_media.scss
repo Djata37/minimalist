@@ -6,12 +6,9 @@
     }
 
     main {
-    
+        margin-bottom: 2.5em;
     .hero .hero-content {
         bottom: 274px;
-    }
-    .hero .hero-picture {
-        margin-bottom: 2.5em;
     }
     .about {
         margin-top: 6.2em;
@@ -166,9 +163,6 @@
         .hero {
             flex-direction: column;
             margin-bottom: 6.2em;
-            .hero-picture {
-                margin-bottom: initial;
-            }
             .hero-content {
                 width: initial;
                 position: initial;

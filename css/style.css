@@ -62,8 +62,10 @@ main {
   display: flex;
   flex-direction: column;
 }
-main .hero .hero-picture {
+main .hero {
   margin-bottom: 9.375em;
+}
+main .hero .hero-picture {
   position: relative;
 }
 main .hero .hero-content {
@@ -1287,11 +1289,11 @@ footer .menu-content .social-menu .social-list .social-item .social-link {
     width: 43em;
   }
 
+  main {
+    margin-bottom: 2.5em;
+  }
   main .hero .hero-content {
     bottom: 274px;
-  }
-  main .hero .hero-picture {
-    margin-bottom: 2.5em;
   }
   main .about {
     margin-top: 6.2em;
@@ -1431,9 +1433,6 @@ footer .menu-content .social-menu .social-list .social-item .social-link {
   main .hero {
     flex-direction: column;
     margin-bottom: 6.2em;
-  }
-  main .hero .hero-picture {
-    margin-bottom: initial;
   }
   main .hero .hero-content {
     width: initial;
