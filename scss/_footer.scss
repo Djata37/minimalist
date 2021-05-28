@@ -1,0 +1,44 @@
+footer {
+    height: 5em;
+    background-color: $grayish;
+    .menu-content {
+        .menu-footer {
+            .list-item {
+                .list-link {
+                    color: white;
+                }
+            }
+        }
+        .social-menu {
+            .social-list {
+                @include flex;
+                .social-item {
+                    &:first-child {
+                        .social-link {
+                            background-image: url(../img/icons/github-white.svg);
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin: 0 15px;
+                        .social-link {
+                            background-image: url(../img/icons/twitter-white.svg);
+                        }
+                    }
+                    &:last-child {
+                        .social-link {
+                            background-image: url(../img/icons/linkedin-white.svg);
+                        }
+                    }
+                    .social-link {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: block;
+                        min-width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

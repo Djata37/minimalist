@@ -1,0 +1,1563 @@
+body {
+  font-size: 16px;
+  background-color: #FAFAFA;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 69.375em;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 9.375em;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .burger-menu {
+  display: none;
+}
+.menu .menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  transform: none;
+}
+.menu .menu-list .list-item {
+  margin-left: 2.625em;
+  text-transform: uppercase;
+}
+.menu .menu-list .list-item .list-link {
+  color: #33323D;
+  font-size: 0.75em;
+  font-family: "Public Sans", sans-serif;
+  text-decoration: none;
+}
+.menu .menu-list .list-item .list-link:hover, .menu .menu-list .list-item .list-link:focus, .menu .menu-list .list-item .list-link:target {
+  color: #5FB4A2;
+}
+.menu .menu-list .list-item .current {
+  color: #5FB4A2;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .hero .hero-picture {
+  margin-bottom: 9.375em;
+  position: relative;
+}
+main .hero .hero-content {
+  width: 27.8125em;
+  background-color: #FAFAFA;
+  position: absolute;
+  bottom: 0;
+}
+main .hero .hero-content .h1-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125em;
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  line-height: 50px;
+  margin-top: 58px;
+  margin-bottom: 38px;
+}
+main .hero .hero-content .primary-btn {
+  font-family: "Public Sans", sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  font-size: 0.75em;
+  padding: 16px 0px 16px 40px;
+  color: white;
+  text-align: center;
+  background-color: #203A4C;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+main .hero .hero-content .primary-btn::before {
+  content: url(/img/icons/down-arrows.svg);
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+}
+main .hero .hero-content .primary-btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #5FB4A2;
+}
+main .hero .hero-content .primary-btn:hover::before {
+  content: url(/img/icons/down-arrows-white.svg);
+}
+main .hero .hero-content .primary-btn:disabled {
+  background-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+main .hero .hero-content .primary-btn:disabled::before {
+  content: url(/img/icons/down-arrows-white.svg);
+}
+main .about {
+  margin-bottom: 9.625em;
+  justify-content: space-between;
+}
+main .about figure {
+  width: 33.75em;
+}
+main .about .section-content {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  width: 21.875em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+main .about .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 55px;
+  margin-bottom: 22px;
+}
+main .about .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+main .about .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 47px;
+}
+main .about .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+main .about .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+main .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+}
+main .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+main .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+main .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+main .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+main .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-main section {
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+.portfolio-main section .section-content {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  width: 21.875em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.portfolio-main section .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 55px;
+  margin-bottom: 22px;
+}
+.portfolio-main section .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.portfolio-main section .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 47px;
+}
+.portfolio-main section .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-main section .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-main section figure {
+  width: 540px;
+  height: 500px;
+}
+.portfolio-main .bookmark, .portfolio-main .fylo {
+  flex-direction: row-reverse;
+}
+.portfolio-main .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+}
+.portfolio-main .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+.portfolio-main .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+.portfolio-main .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+.portfolio-main .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.portfolio-main .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-main section {
+  justify-content: space-between;
+  margin-bottom: 5em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  padding-top: 3.375em;
+}
+.contact-main section .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+}
+.contact-main section .section-content {
+  width: 39.0625em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.contact-main section .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.contact-main section .social-menu .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: left;
+}
+.contact-main section .social-menu .social-list .social-item:first-child .social-link {
+  background-image: url(../img/icons/github.svg);
+}
+.contact-main section .social-menu .social-list .social-item:nth-child(2) {
+  margin: 0 15px;
+}
+.contact-main section .social-menu .social-list .social-item:nth-child(2) .social-link {
+  background-image: url(../img/icons/twitter.svg);
+}
+.contact-main section .social-menu .social-list .social-item:last-child .social-link {
+  background-image: url(../img/icons/linkedin.svg);
+}
+.contact-main section .social-menu .social-list .social-item .social-link {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  min-width: 25px;
+  height: 25px;
+}
+.contact-main section label {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #33323D;
+  opacity: 0.8;
+  font-size: 0.8125em;
+  margin-bottom: 15px;
+}
+.contact-main section input {
+  background-color: #33323d1a;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #33323D;
+  font-size: 0.8125em;
+  position: relative;
+  padding-left: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+  border: 1px solid #ECECED;
+}
+.contact-main section input::-moz-placeholder {
+  opacity: 0.4;
+}
+.contact-main section input:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.contact-main section input::placeholder {
+  opacity: 0.4;
+}
+.contact-main section input:hover {
+  transition: 0.3s ease-in-out;
+  background: #ECECED 0% 0% no-repeat padding-box;
+  border: 1px solid #5FB4A2;
+  opacity: 1;
+}
+.contact-main section input:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-main section input:hover:-ms-input-placeholder {
+  opacity: 1;
+}
+.contact-main section input:hover::placeholder {
+  opacity: 1;
+}
+.contact-main section textarea {
+  background-color: #33323d1a;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #33323D;
+  font-size: 0.8125em;
+  position: relative;
+  padding-left: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  resize: none;
+  border: 1px solid #ECECED;
+}
+.contact-main section textarea::-moz-placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea:-ms-input-placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea::placeholder {
+  opacity: 0.4;
+}
+.contact-main section textarea:hover {
+  transition: 0.3s ease-in-out;
+  background: #ECECED 0% 0% no-repeat padding-box;
+  border: 1px solid #5FB4A2;
+  opacity: 1;
+}
+.contact-main section textarea:hover::-moz-placeholder {
+  opacity: 1;
+}
+.contact-main section textarea:hover:-ms-input-placeholder {
+  opacity: 1;
+}
+.contact-main section textarea:hover::placeholder {
+  opacity: 1;
+}
+.contact-main section .submit-btn {
+  font-family: "Public Sans", sans-serif;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 48px;
+  font-size: 0.75em;
+  padding: 16px 0px 16px 40px;
+  color: white;
+  text-align: center;
+  background-color: #203A4C;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 400;
+  opacity: 1;
+  margin-bottom: 0;
+  margin-top: 24px;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.contact-main section .submit-btn::before {
+  content: url(/img/icons/down-arrows.svg);
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+}
+.contact-main section .submit-btn:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #5FB4A2;
+}
+.contact-main section .submit-btn:hover::before {
+  content: url(/img/icons/down-arrows-white.svg);
+}
+.contact-main section .submit-btn:disabled {
+  background-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.contact-main section .submit-btn:disabled::before {
+  content: url(/img/icons/down-arrows-white.svg);
+}
+.contact-main section .status {
+  font-family: "Public Sans", sans-serif;
+  color: #F43030;
+  font-weight: 700;
+  font-style: italic;
+  text-align: left;
+  font-size: 0.625em;
+  margin-bottom: 32px;
+}
+.contact-main section .invalid-input {
+  background: #ECECED 0% 0% no-repeat padding-box;
+  border: 1px solid #F43030;
+  opacity: 1;
+}
+.contact-main section .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.manage-main-page {
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.manage-main-page .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.manage-main-page .section-content:first-child {
+  min-width: 21.875em;
+  max-height: 31.25em;
+  margin-right: 7.8125em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.manage-main-page .section-content:not(:first-child) figure {
+  margin-bottom: 34px;
+}
+.manage-main-page .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 53px;
+}
+.manage-main-page .section-content .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+}
+.manage-main-page .section-content .body2 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375em;
+  letter-spacing: 0;
+  margin: 34px 0;
+}
+.manage-main-page .section-content .body2 .cefim {
+  text-decoration: none;
+  color: #33323D;
+}
+.manage-main-page .section-content .body2 .cefim:hover {
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #33323D;
+}
+.manage-main-page .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #5FB4A2;
+  margin-bottom: 16px;
+}
+.manage-main-page .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 49px;
+  margin-top: 26px;
+}
+.manage-main-page .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.manage-main-page .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.manage-main-page .project-link {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 4em;
+}
+.manage-main-page .project-link .link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding: 2.375em 0;
+}
+.manage-main-page .project-link .link-content:hover {
+  transition: 0.3s ease-in-out;
+}
+.manage-main-page .project-link .link-content:hover .column .h3-like, .manage-main-page .project-link .link-content:hover .column .body1 {
+  color: #5FB4A2;
+}
+.manage-main-page .project-link .link-content img {
+  margin-right: 2em;
+}
+.manage-main-page .project-link .link-content:last-child {
+  text-align: right;
+}
+.manage-main-page .project-link .link-content:last-child img {
+  margin-right: 0;
+  margin-left: 2em;
+}
+.manage-main-page .project-link .link-content .column {
+  display: flex;
+  flex-direction: column;
+}
+.manage-main-page .project-link .link-content .column .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+  color: #33323D;
+}
+.manage-main-page .project-link .link-content .column .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #33323D;
+}
+.manage-main-page .project-link span {
+  min-height: 100%;
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 auto;
+}
+.manage-main-page .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+  margin-top: 7.5em;
+}
+.manage-main-page .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+.manage-main-page .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+.manage-main-page .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+.manage-main-page .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.manage-main-page .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+.bookmark-main-page {
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.bookmark-main-page .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.bookmark-main-page .section-content:first-child {
+  min-width: 21.875em;
+  max-height: 31.25em;
+  margin-right: 7.8125em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.bookmark-main-page .section-content:not(:first-child) figure {
+  margin-bottom: 34px;
+}
+.bookmark-main-page .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 53px;
+}
+.bookmark-main-page .section-content .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+}
+.bookmark-main-page .section-content .body2 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375em;
+  letter-spacing: 0;
+  margin: 34px 0;
+}
+.bookmark-main-page .section-content .body2 .cefim {
+  text-decoration: none;
+  color: #33323D;
+}
+.bookmark-main-page .section-content .body2 .cefim:hover {
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #33323D;
+}
+.bookmark-main-page .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #5FB4A2;
+  margin-bottom: 16px;
+}
+.bookmark-main-page .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 49px;
+  margin-top: 26px;
+}
+.bookmark-main-page .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.bookmark-main-page .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.bookmark-main-page .project-link {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 4em;
+}
+.bookmark-main-page .project-link .link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding: 2.375em 0;
+}
+.bookmark-main-page .project-link .link-content:hover {
+  transition: 0.3s ease-in-out;
+}
+.bookmark-main-page .project-link .link-content:hover .column .h3-like, .bookmark-main-page .project-link .link-content:hover .column .body1 {
+  color: #5FB4A2;
+}
+.bookmark-main-page .project-link .link-content img {
+  margin-right: 2em;
+}
+.bookmark-main-page .project-link .link-content:last-child {
+  text-align: right;
+}
+.bookmark-main-page .project-link .link-content:last-child img {
+  margin-right: 0;
+  margin-left: 2em;
+}
+.bookmark-main-page .project-link .link-content .column {
+  display: flex;
+  flex-direction: column;
+}
+.bookmark-main-page .project-link .link-content .column .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+  color: #33323D;
+}
+.bookmark-main-page .project-link .link-content .column .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #33323D;
+}
+.bookmark-main-page .project-link span {
+  min-height: 100%;
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 auto;
+}
+.bookmark-main-page .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+  margin-top: 7.5em;
+}
+.bookmark-main-page .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+.bookmark-main-page .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+.bookmark-main-page .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+.bookmark-main-page .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.bookmark-main-page .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+.insure-main-page {
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.insure-main-page .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.insure-main-page .section-content:first-child {
+  min-width: 21.875em;
+  max-height: 31.25em;
+  margin-right: 7.8125em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.insure-main-page .section-content:not(:first-child) figure {
+  margin-bottom: 34px;
+}
+.insure-main-page .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 53px;
+}
+.insure-main-page .section-content .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+}
+.insure-main-page .section-content .body2 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375em;
+  letter-spacing: 0;
+  margin: 34px 0;
+}
+.insure-main-page .section-content .body2 .cefim {
+  text-decoration: none;
+  color: #33323D;
+}
+.insure-main-page .section-content .body2 .cefim:hover {
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #33323D;
+}
+.insure-main-page .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #5FB4A2;
+  margin-bottom: 16px;
+}
+.insure-main-page .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 49px;
+  margin-top: 26px;
+}
+.insure-main-page .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.insure-main-page .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.insure-main-page .project-link {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 4em;
+}
+.insure-main-page .project-link .link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding: 2.375em 0;
+}
+.insure-main-page .project-link .link-content:hover {
+  transition: 0.3s ease-in-out;
+}
+.insure-main-page .project-link .link-content:hover .column .h3-like, .insure-main-page .project-link .link-content:hover .column .body1 {
+  color: #5FB4A2;
+}
+.insure-main-page .project-link .link-content img {
+  margin-right: 2em;
+}
+.insure-main-page .project-link .link-content:last-child {
+  text-align: right;
+}
+.insure-main-page .project-link .link-content:last-child img {
+  margin-right: 0;
+  margin-left: 2em;
+}
+.insure-main-page .project-link .link-content .column {
+  display: flex;
+  flex-direction: column;
+}
+.insure-main-page .project-link .link-content .column .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+  color: #33323D;
+}
+.insure-main-page .project-link .link-content .column .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #33323D;
+}
+.insure-main-page .project-link span {
+  min-height: 100%;
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 auto;
+}
+.insure-main-page .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+  margin-top: 7.5em;
+}
+.insure-main-page .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+.insure-main-page .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+.insure-main-page .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+.insure-main-page .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.insure-main-page .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+.fylo-main-page {
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.fylo-main-page .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.fylo-main-page .section-content:first-child {
+  min-width: 21.875em;
+  max-height: 31.25em;
+  margin-right: 7.8125em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.fylo-main-page .section-content:not(:first-child) figure {
+  margin-bottom: 34px;
+}
+.fylo-main-page .section-content .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  margin-top: 53px;
+}
+.fylo-main-page .section-content .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+}
+.fylo-main-page .section-content .body2 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375em;
+  letter-spacing: 0;
+  margin: 34px 0;
+}
+.fylo-main-page .section-content .body2 .cefim {
+  text-decoration: none;
+  color: #33323D;
+}
+.fylo-main-page .section-content .body2 .cefim:hover {
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #33323D;
+}
+.fylo-main-page .section-content .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #5FB4A2;
+  margin-bottom: 16px;
+}
+.fylo-main-page .section-content .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  margin-bottom: 49px;
+  margin-top: 26px;
+}
+.fylo-main-page .section-content .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.fylo-main-page .section-content .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+.fylo-main-page .project-link {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  margin-top: 4em;
+}
+.fylo-main-page .project-link .link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  padding: 2.375em 0;
+}
+.fylo-main-page .project-link .link-content:hover {
+  transition: 0.3s ease-in-out;
+}
+.fylo-main-page .project-link .link-content:hover .column .h3-like, .fylo-main-page .project-link .link-content:hover .column .body1 {
+  color: #5FB4A2;
+}
+.fylo-main-page .project-link .link-content img {
+  margin-right: 2em;
+}
+.fylo-main-page .project-link .link-content:last-child {
+  text-align: right;
+}
+.fylo-main-page .project-link .link-content:last-child img {
+  margin-right: 0;
+  margin-left: 2em;
+}
+.fylo-main-page .project-link .link-content .column {
+  display: flex;
+  flex-direction: column;
+}
+.fylo-main-page .project-link .link-content .column .h3-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2em;
+  font-weight: 400;
+  letter-spacing: -0.29px;
+  text-decoration: none;
+  color: #33323D;
+}
+.fylo-main-page .project-link .link-content .column .body1 {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.5;
+  color: #33323D;
+}
+.fylo-main-page .project-link span {
+  min-height: 100%;
+  border-right: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 auto;
+}
+.fylo-main-page .project {
+  align-items: center;
+  margin-bottom: 8.625em;
+  margin-top: 7.5em;
+}
+.fylo-main-page .project .h2-like {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  max-width: 27.875em;
+}
+.fylo-main-page .project span {
+  min-width: 33.375em;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  margin: 0 2em;
+}
+.fylo-main-page .project .secondary-btn {
+  display: inline-flex;
+  min-width: 168px;
+  max-width: 168px;
+  height: 48px;
+  font-size: 0.75em;
+  color: #33323D;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+}
+.fylo-main-page .project .secondary-btn:hover {
+  background-color: #33323D;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.fylo-main-page .project .secondary-btn:disabled {
+  color: #D7D7D7;
+  border-color: #D7D7D7;
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  height: 5em;
+  background-color: #33323D;
+}
+footer .menu-content .menu-footer .list-item .list-link {
+  color: white;
+}
+footer .menu-content .social-menu .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .menu-content .social-menu .social-list .social-item:first-child .social-link {
+  background-image: url(../img/icons/github-white.svg);
+}
+footer .menu-content .social-menu .social-list .social-item:nth-child(2) {
+  margin: 0 15px;
+}
+footer .menu-content .social-menu .social-list .social-item:nth-child(2) .social-link {
+  background-image: url(../img/icons/twitter-white.svg);
+}
+footer .menu-content .social-menu .social-list .social-item:last-child .social-link {
+  background-image: url(../img/icons/linkedin-white.svg);
+}
+footer .menu-content .social-menu .social-list .social-item .social-link {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  min-width: 25px;
+  height: 25px;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .container {
+    width: 43em;
+  }
+
+  main .hero .hero-content {
+    bottom: 274px;
+  }
+  main .hero .hero-picture {
+    margin-bottom: 2.5em;
+  }
+  main .about {
+    margin-top: 6.2em;
+    margin-bottom: 6.2em;
+  }
+  main .project {
+    margin-bottom: 4.7em;
+  }
+  main .project span {
+    min-width: 7.0625em;
+  }
+
+  .portfolio-main section .section-content {
+    width: 281px;
+  }
+  .portfolio-main section figure {
+    width: initial;
+    height: initial;
+    align-self: center;
+  }
+  .portfolio-main .project {
+    margin-top: 5.25em;
+    margin-bottom: 4.5625em;
+  }
+  .portfolio-main .project span {
+    min-width: 7.0625em;
+  }
+
+  .bookmark-main-page, .manage-main-page, .fylo-main-page, .insure-main-page {
+    margin-bottom: 0;
+  }
+  .bookmark-main-page .section-project, .manage-main-page .section-project, .fylo-main-page .section-project, .insure-main-page .section-project {
+    flex-direction: column;
+  }
+  .bookmark-main-page .section-project figure, .manage-main-page .section-project figure, .fylo-main-page .section-project figure, .insure-main-page .section-project figure {
+    margin-top: 2.5em;
+  }
+  .bookmark-main-page .section-content, .manage-main-page .section-content, .fylo-main-page .section-content, .insure-main-page .section-content {
+    margin-top: 2.5em;
+  }
+  .bookmark-main-page .section-content:first-child, .manage-main-page .section-content:first-child, .fylo-main-page .section-content:first-child, .insure-main-page .section-content:first-child {
+    margin-right: initial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content;
+    gap: 0px 0px;
+    grid-template-areas: "A B" "C B" "D B" "E B";
+  }
+  .bookmark-main-page .section-content:first-child .h2-like, .manage-main-page .section-content:first-child .h2-like, .fylo-main-page .section-content:first-child .h2-like, .insure-main-page .section-content:first-child .h2-like {
+    grid-area: A;
+    margin-top: 34px;
+  }
+  .bookmark-main-page .section-content:first-child .body2, .manage-main-page .section-content:first-child .body2, .fylo-main-page .section-content:first-child .body2, .insure-main-page .section-content:first-child .body2 {
+    grid-area: B;
+    margin-left: 4.7em;
+  }
+  .bookmark-main-page .section-content:first-child:last-child.cyan, .manage-main-page .section-content:first-child:last-child.cyan, .fylo-main-page .section-content:first-child:last-child.cyan, .insure-main-page .section-content:first-child:last-child.cyan {
+    grid-area: D;
+  }
+  .bookmark-main-page .section-content:first-child .cyan:nth-of-type(1), .manage-main-page .section-content:first-child .cyan:nth-of-type(1), .fylo-main-page .section-content:first-child .cyan:nth-of-type(1), .insure-main-page .section-content:first-child .cyan:nth-of-type(1) {
+    grid-area: C;
+  }
+  .bookmark-main-page .section-content:first-child .secondary-btn, .manage-main-page .section-content:first-child .secondary-btn, .fylo-main-page .section-content:first-child .secondary-btn, .insure-main-page .section-content:first-child .secondary-btn {
+    grid-area: E;
+    margin-top: 0;
+  }
+  .bookmark-main-page .project, .manage-main-page .project, .fylo-main-page .project, .insure-main-page .project {
+    margin-top: 5.25em;
+    margin-bottom: 4.5625em;
+  }
+  .bookmark-main-page .project span, .manage-main-page .project span, .fylo-main-page .project span, .insure-main-page .project span {
+    min-width: 7.0625em;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container {
+    width: 19.4375em;
+  }
+
+  header .menu .menu-list {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 125px;
+    right: 0;
+    background-color: #33323D;
+    transition: 0.3s;
+    transform: translateX(200%);
+    width: 13.9375em;
+    height: 11.625em;
+    text-align: center;
+    padding-top: 15px;
+  }
+  header .menu .menu-list .list-item {
+    margin-left: 0;
+  }
+  header .menu .menu-list .list-item .list-link {
+    display: block;
+    padding: 1.6rem 2rem;
+    transition: 0.3s;
+    color: #FAFAFA;
+  }
+  header .menu .burger-menu {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  header .menu .nav-bar {
+    width: 3rem;
+    height: 0.5rem;
+    background-color: #33323D;
+    transition: 0.3s;
+  }
+  header .menu .burger-menu[aria-expanded=true] .nav-bar:first-child {
+    transform: rotate(45deg);
+  }
+  header .menu .burger-menu[aria-expanded=true] .nav-bar:not(:first-child):not(:last-child) {
+    opacity: 0;
+  }
+  header .menu .burger-menu[aria-expanded=true] .nav-bar:last-child {
+    transform: rotate(-45deg);
+  }
+  header .menu .nav-bar:first-child {
+    transform-origin: left top;
+  }
+  header .menu .nav-bar:last-child {
+    transform-origin: left bottom;
+  }
+  header .menu .burger-menu[aria-expanded=true] + .menu-list {
+    transform: translateX(0);
+    display: block;
+  }
+
+  main .hero {
+    flex-direction: column;
+    margin-bottom: 6.2em;
+  }
+  main .hero .hero-picture {
+    margin-bottom: initial;
+  }
+  main .hero .hero-content {
+    width: initial;
+    position: initial;
+  }
+  main .about {
+    flex-direction: column;
+    margin-bottom: 7.45em;
+  }
+  main .about figure {
+    width: initial;
+  }
+  main .about .section-content {
+    width: initial;
+  }
+  main .project {
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  main .project .h2-like {
+    text-align: center;
+    margin-bottom: 0.65em;
+  }
+  main .project span {
+    display: none;
+  }
+
+  .portfolio-main section .section-content {
+    width: initial;
+    margin-top: 2em;
+  }
+  .portfolio-main section figure {
+    width: initial;
+    height: initial;
+  }
+  .portfolio-main .manage, .portfolio-main .bookmark, .portfolio-main .insure, .portfolio-main .fylo {
+    flex-direction: column;
+  }
+  .portfolio-main .project {
+    flex-direction: column;
+    margin-bottom: 5em;
+  }
+  .portfolio-main .project .h2-like {
+    text-align: center;
+    margin-bottom: 0.65em;
+  }
+  .portfolio-main .project span {
+    display: none;
+  }
+
+  .bookmark-main-page, .manage-main-page, .fylo-main-page, .insure-main-page {
+    margin-bottom: 0;
+  }
+  .bookmark-main-page .hero, .manage-main-page .hero, .fylo-main-page .hero, .insure-main-page .hero {
+    margin-bottom: initial;
+  }
+  .bookmark-main-page .hero .hero-picture, .manage-main-page .hero .hero-picture, .fylo-main-page .hero .hero-picture, .insure-main-page .hero .hero-picture {
+    margin-bottom: initial;
+  }
+  .bookmark-main-page .section-project, .manage-main-page .section-project, .fylo-main-page .section-project, .insure-main-page .section-project {
+    flex-direction: column;
+  }
+  .bookmark-main-page .section-project figure, .manage-main-page .section-project figure, .fylo-main-page .section-project figure, .insure-main-page .section-project figure {
+    margin-top: 2.5em;
+  }
+  .bookmark-main-page .section-project .section-content:first-child, .manage-main-page .section-project .section-content:first-child, .fylo-main-page .section-project .section-content:first-child, .insure-main-page .section-project .section-content:first-child {
+    min-width: initial;
+    max-height: initial;
+    margin-right: initial;
+    margin-bottom: 2em;
+  }
+  .bookmark-main-page .project-link, .manage-main-page .project-link, .fylo-main-page .project-link, .insure-main-page .project-link {
+    margin-top: 2em;
+  }
+  .bookmark-main-page .project-link .link-content, .manage-main-page .project-link .link-content, .fylo-main-page .project-link .link-content, .insure-main-page .project-link .link-content {
+    flex-direction: column;
+    align-items: end;
+  }
+  .bookmark-main-page .project-link .link-content:last-child, .manage-main-page .project-link .link-content:last-child, .fylo-main-page .project-link .link-content:last-child, .insure-main-page .project-link .link-content:last-child {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .bookmark-main-page .project, .manage-main-page .project, .fylo-main-page .project, .insure-main-page .project {
+    flex-direction: column;
+    margin-bottom: 5em;
+    margin-top: 4em;
+  }
+  .bookmark-main-page .project .h2-like, .manage-main-page .project .h2-like, .fylo-main-page .project .h2-like, .insure-main-page .project .h2-like {
+    text-align: center;
+    margin-bottom: 0.65em;
+  }
+  .bookmark-main-page .project span, .manage-main-page .project span, .fylo-main-page .project span, .insure-main-page .project span {
+    display: none;
+  }
+
+  .contact-main section {
+    flex-direction: column;
+  }
+  .contact-main section .h2-like {
+    margin-bottom: 20px;
+  }
+  .contact-main section .section-content {
+    width: initial;
+  }
+  .contact-main section .social-menu {
+    margin-top: 20px;
+  }
+
+  footer {
+    height: initial;
+  }
+  footer .menu-content {
+    flex-direction: column;
+    padding: 3em 0;
+  }
+  footer .menu-content .menu-footer {
+    flex-direction: column;
+  }
+  footer .menu-content .menu-footer .menu-list {
+    flex-direction: column;
+    margin-top: 2.625em;
+  }
+  footer .menu-content .menu-footer .menu-list .list-item {
+    margin-left: initial;
+    margin-bottom: 2em;
+  }
+}/*# sourceMappingURL=style.css.map */

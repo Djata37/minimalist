@@ -1,0 +1,133 @@
+//Main Index
+main {
+    @include column;
+    .hero {
+        .hero-picture {
+            margin-bottom: 9.375em;
+            position: relative; }
+        .hero-content {
+            width: 27.8125em;
+            background-color: $white;
+            position: absolute;
+            bottom: 0;
+
+            .h1-like {
+                @include h1-like;
+                line-height: 50px;
+                margin-top: 58px;
+                margin-bottom: 38px;
+            }
+            .primary-btn {
+                @include primary-btn;
+            }
+        }
+    }
+    .about {
+        figure {
+            width: 33.75em;
+        }
+        margin-bottom: 9.625em;
+        @include main;
+    }
+    .project {
+        @include project;
+    }
+}
+//Main portfolio
+.portfolio-main {
+    section {
+        margin-bottom: 80px;
+        @include main;
+        figure {
+            width: 540px;
+            height: 500px;
+        }
+    }
+    .bookmark, .fylo {
+        flex-direction: row-reverse
+    }
+    .project {
+        @include project;
+    }
+}
+// Main Contact
+.contact-main {
+    section {
+        @include main-contact;
+        .social-menu {
+            .social-list {
+                @include flex;
+                justify-content: left;
+                .social-item {
+                    &:first-child {
+                        .social-link {
+                            background-image: url(../img/icons/github.svg);
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin: 0 15px;
+                        .social-link {
+                            background-image: url(../img/icons/twitter.svg);
+                        }
+                    }
+                    &:last-child {
+                        .social-link {
+                            background-image: url(../img/icons/linkedin.svg);
+                        }
+                    }
+                    .social-link {
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: block;
+                        min-width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        label {
+            @include text-label;
+        }
+        input {
+            @include textfield;
+        }
+        textarea {
+            @include textfield;
+        }
+        .submit-btn {
+            @include submit-btn;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+        .status {
+            @include invalid;
+            margin-bottom: 32px;
+        }
+        .invalid-input {
+                background: $area 0% 0% no-repeat padding-box;
+                border: 1px solid $red;
+                opacity: 1;
+        }
+        .body1 {
+             @include body1;
+        }
+    }
+}
+//Main project
+    //Project Manage 
+.manage-main-page {
+    @include portfolio-detail;
+}
+    //Project Bookmark
+.bookmark-main-page {
+    @include portfolio-detail;
+}
+    //Project Insure
+.insure-main-page {
+    @include portfolio-detail;
+}
+    //Project Foly
+.fylo-main-page {
+    @include portfolio-detail;
+}

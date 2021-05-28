@@ -1,0 +1,365 @@
+// font-family: 'Ibarra Real Nova', serif;
+// font-family: 'Public Sans', sans-serif;
+
+$width : 69.375em;
+$min-width : 33.375em;
+
+@mixin container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $width;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin h1-like {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3.125em;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+
+@mixin h2-like {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+}
+
+@mixin h3-like {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: -0.29px;
+    text-decoration: none;
+}
+
+@mixin body1 {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+@mixin body2 {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9375em;
+    letter-spacing: 0;
+}
+
+@mixin hover {
+    transition: 0.3s ease-in-out;
+}
+
+@mixin primary-btn {
+    font-family: 'Public Sans', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    font-size: 0.75em;
+    padding: 16px 0px 16px 40px;
+    color: white;
+    text-align: center;
+    background-color: $dark-blue;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    &::before {
+        content: url(/img/icons/down-arrows.svg);
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 48px;
+        height: 48px;
+        padding: 16px;
+    }
+    &:hover {
+        @include hover;
+        background-color: $cyan;
+        &::before{
+            content: url(/img/icons/down-arrows-white.svg);
+        }
+    }
+    &:disabled {
+        background-color: $disabled;
+        @include hover;
+        &::before{
+            content: url(/img/icons/down-arrows-white.svg);
+        }
+    }
+}
+
+@mixin secondary-btn {
+    display: inline-flex;
+    min-width: 168px;
+    max-width: 168px;
+    height: 48px;
+    font-size: 0.75em;
+    color: $grayish;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid $grayish;
+    text-decoration: none;
+    &:hover {
+        background-color: $grayish;
+        color: white;
+        @include hover;
+    }
+    &:disabled {
+        color: $disabled;
+        border-color: $disabled;
+        @include hover;
+    }
+}
+
+@mixin submit-btn {
+    @include primary-btn;
+    padding: 0;
+    font-weight: 400;
+    opacity: 1;
+    margin-bottom: 0;
+    margin-top: 24px;
+    border: none;
+}
+
+@mixin text-label {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0px;
+    color: $grayish;
+    opacity: 0.8;
+    font-size: 0.8125em;
+    margin-bottom: 15px;
+    
+}
+
+@mixin textfield {
+    background-color: $fond;
+    font-family: 'Public Sans', sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    color: $grayish;
+    font-size: 0.8125em;
+    position: relative;
+    padding-left: 16px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    resize: none;
+    border: 1px solid $area;
+    
+    &::placeholder{
+        opacity: 0.4;
+    }
+    &:hover {
+        @include hover;
+        background: $area 0% 0% no-repeat padding-box;
+        border: 1px solid $cyan;
+        opacity: 1;
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin invalid {
+        font-family: 'Public Sans', sans-serif;
+        color: $red;
+        font-weight: 700;
+        font-style: italic;
+        text-align: left;
+        font-size: 0.625em;
+}
+
+@mixin main {
+    justify-content: space-between;
+    .section-content {
+        border-top: 1px solid rgba($grayish, 0.15);
+        border-bottom: 1px solid rgba($grayish, 0.15);
+        width: 21.875em;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        .h2-like {
+            @include h2-like;
+            margin-top: 55px;
+            margin-bottom: 22px;
+        }
+        .body1 {
+            @include body1;
+            margin-bottom: 18px;
+        }
+        .secondary-btn {
+            @include secondary-btn;
+            margin-bottom: 47px;
+        }
+    }
+    
+}
+
+@mixin main-contact {
+    justify-content: space-between;
+    margin-bottom: 5em;
+    border-top: 1px solid rgba($grayish, 0.15);
+    padding-top: 3.375em;
+    .h2-like {
+        @include h2-like;
+    }
+    .section-content {
+        width: 39.0625em;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+        .body1 {
+            @include body1;
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@mixin project {
+        align-items: center;
+        margin-bottom: 8.625em;
+        .h2-like {
+            @include h2-like;
+            max-width: 27.875em;
+        }
+        span {
+            min-width: $min-width;
+            border-top: 1px solid rgba($grayish, 0.15);
+            margin: 0 2em;
+        }
+        .secondary-btn {
+            @include secondary-btn;
+        }
+}
+
+@mixin portfolio-detail {
+    justify-content: space-between;
+    margin-bottom: 5em;
+    .section-content {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        &:first-child {
+            min-width: 21.875em;
+            max-height: 31.25em;
+            margin-right: 7.8125em;
+            border-top: 1px solid rgba($grayish, 0.15);
+            border-bottom: 1px solid rgba($grayish, 0.15);
+        }
+        &:not(:first-child) {
+            figure {
+                margin-bottom: 34px;
+            }
+        }
+        .h2-like {
+            @include h2-like;
+            margin-top: 53px;
+        }
+        .h3-like {
+            @include h3-like;
+        }
+        .body2 {
+            @include body2;
+            margin: 34px 0;
+            .cefim {
+                text-decoration: none;
+                color: $grayish;
+                &:hover{
+                    @include hover;
+                    border-bottom: 1px solid $grayish;
+                }
+                
+            }
+        }
+        .body1 {
+            @include body1;
+            color: $cyan;
+            margin-bottom: 16px;
+
+        }
+        .secondary-btn {
+            @include secondary-btn;
+            margin-bottom: 49px;
+            margin-top: 26px;
+        }
+       
+    }
+    .project-link {
+        border-top: 1px solid rgba($grayish, 0.15);
+        border-bottom: 1px solid rgba($grayish, 0.15);
+        margin-top: 4em;
+        .link-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            padding: 2.375em 0;
+            &:hover {
+                @include hover;
+                .column {
+                    .h3-like, .body1 {
+                        color: $cyan;
+                    }
+                }
+            }
+            img {
+                margin-right: 2em;
+            }
+            &:last-child{
+                text-align: right;
+                img {
+                    margin-right: 0;
+                    margin-left: 2em;
+                }
+            }
+            .column {
+                @include column;
+                .h3-like {
+                    @include h3-like;
+                    color: $grayish;
+                }
+                .body1 {
+                    @include body1;
+                    font-size: 16px;
+                    opacity: 0.5;
+                    color: $grayish;
+                }
+            }
+                
+        }
+        span {
+            min-height: 100%;
+            border-right: 1px solid rgba($grayish, 0.15);
+            margin: 0 auto;
+
+        }
+    }
+    .project {
+        @include project;
+        margin-top: 7.5em;
+    }
+}

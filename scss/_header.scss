@@ -1,0 +1,44 @@
+body {
+    font-size: 16px;
+    background-color: $white;
+}
+
+.container {
+    @include container;
+}
+
+header {
+    height: 9.375em;
+}
+.menu-content {
+    @include flex;
+    width: 100%
+}
+
+.menu {
+    @include flex;
+    .burger-menu {
+        display: none;
+    }
+    .menu-list {
+        @include flex;
+        position: static;
+        transform: none;
+        .list-item {
+        margin-left: 2.625em;
+        text-transform: uppercase;
+            .list-link {
+                color: $grayish;
+                font-size: 0.75em;
+                font-family: 'Public Sans', sans-serif;
+                text-decoration: none;
+                    &:hover, &:focus, &:target {
+                    color: $cyan;
+                    }
+            }
+            .current {
+                color: $cyan;
+            }
+        }
+    }
+}

@@ -1,0 +1,303 @@
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    $width: 43em;
+    $min-width : 7.0625em;
+    .container {
+        width: $width;
+    }
+
+    main {
+    
+    .hero .hero-content {
+        bottom: 274px;
+    }
+    .hero .hero-picture {
+        margin-bottom: 2.5em;
+    }
+    .about {
+        margin-top: 6.2em;
+        margin-bottom: 6.2em;
+    }
+    .project {
+        margin-bottom: 4.7em;
+        span {
+            min-width: $min-width;
+        }
+    }
+    }
+    .portfolio-main {
+        section {
+            .section-content {
+                width: 281px;
+            }
+            figure {
+                width: initial; 
+                height: initial;
+                align-self: center;
+            }
+        }
+        .project {
+            margin-top: 5.25em;
+            margin-bottom: 4.5625em;
+            span {
+            min-width: $min-width;  
+            } 
+        }
+    }
+    .bookmark-main-page, .manage-main-page, .fylo-main-page, .insure-main-page {
+        margin-bottom: 0;
+        .section-project {
+            flex-direction: column;
+            figure {
+                margin-top: 2.5em;
+            }
+        }
+
+        .section-content {
+            margin-top: 2.5em;
+            &:first-child {
+                margin-right: initial;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: min-content min-content min-content min-content;
+                gap: 0px 0px;
+                grid-template-areas:
+                  "A B"
+                  "C B"
+                  "D B"
+                  "E B";
+                .h2-like {
+                    grid-area: A;
+                    margin-top: 34px;
+                } 
+                .body2 {
+                    grid-area: B;
+                    margin-left: 4.7em;
+                }
+                &:last-child.cyan {
+                    grid-area: D;
+                }
+                .cyan:nth-of-type(1) {
+                    grid-area: C;
+                }
+                .secondary-btn {
+                    grid-area: E;
+                    margin-top: 0;
+                }
+                
+            }
+        }
+        .project {
+            margin-top: 5.25em;
+            margin-bottom: 4.5625em;
+            span {
+            min-width: $min-width;  
+            } 
+        }
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    $width: 19.4375em;
+    .container {
+        width: $width;
+    }
+    header {
+    .menu {
+        .menu-list {
+            display: none;
+            z-index: 1000;
+            position: absolute;
+            top: 125px;
+            right: 0;
+            background-color: $grayish;
+            transition: 0.3s;
+            transform: translateX(200%);
+            width: 13.9375em;
+            height: 11.625em;
+            text-align: center;
+            padding-top: 15px;
+
+            .list-item {
+                margin-left: 0;
+                .list-link {
+                    display: block;
+                    padding: 1.6rem 2rem;
+                    transition: .3s;
+                    color: $white;
+                }
+            }
+        }
+        .burger-menu {
+            display: grid;
+            gap: .5rem;
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+        }  
+        .nav-bar {
+            width: 3rem;
+            height: 0.5rem;
+            background-color: $grayish;
+            transition: .3s;
+        }
+        .burger-menu[aria-expanded="true"] .nav-bar:first-child {
+            transform: rotate(45deg);
+        }
+        .burger-menu[aria-expanded="true"] .nav-bar:not(:first-child):not(:last-child) {
+            opacity: 0;
+        }
+        .burger-menu[aria-expanded="true"] .nav-bar:last-child {
+            transform: rotate(-45deg);
+        }
+        .nav-bar:first-child {
+            transform-origin: left top;
+        }
+        
+        .nav-bar:last-child {
+            transform-origin: left bottom;
+        }
+        .burger-menu[aria-expanded="true"] + .menu-list {
+            transform: translateX(0);
+            display: block;
+        }
+    }
+    }
+    main {
+        .hero {
+            flex-direction: column;
+            margin-bottom: 6.2em;
+            .hero-picture {
+                margin-bottom: initial;
+            }
+            .hero-content {
+                width: initial;
+                position: initial;
+            }
+        }
+        .about {
+            flex-direction: column;
+            margin-bottom: 7.45em;
+            figure {
+                width: initial;
+            }
+            .section-content {
+                width: initial;
+            }
+        }
+        .project {
+            flex-direction: column;
+            margin-bottom: 5em;
+            .h2-like {
+                text-align: center;
+                margin-bottom: 0.65em;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .portfolio-main {
+         section  {
+            .section-content {
+                width: initial;
+                margin-top: 2em;
+            }
+            figure {
+                width: initial; 
+                height: initial;
+            }
+        }
+        .manage, .bookmark, .insure, .fylo {
+            flex-direction: column;
+        }
+        .project {
+            flex-direction: column;
+            margin-bottom: 5em;
+            .h2-like {
+                text-align: center;
+                margin-bottom: 0.65em;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+    .bookmark-main-page, .manage-main-page, .fylo-main-page, .insure-main-page {
+        margin-bottom: 0;
+        .hero {
+            margin-bottom: initial;
+            .hero-picture {
+                margin-bottom: initial;
+            }
+        }
+        .section-project {
+            flex-direction: column;
+            figure {
+                margin-top: 2.5em;
+            }
+            .section-content:first-child {
+                    min-width: initial;
+                    max-height: initial;
+                    margin-right: initial;
+                    margin-bottom: 2em;
+                }
+            }
+        .project-link {
+            margin-top: 2em;
+            .link-content {    
+                flex-direction: column;
+                align-items: end;
+                &:last-child {
+                    flex-direction: column-reverse;
+                    align-items: flex-end;
+                }
+            }
+
+        }
+        .project {
+            flex-direction: column;
+            margin-bottom: 5em;
+            margin-top: 4em;
+            .h2-like {
+                text-align: center;
+                margin-bottom: 0.65em;
+            }
+            span {
+                display: none;
+            }
+        }
+    }
+    .contact-main {
+        section {
+            flex-direction: column;
+            .h2-like {
+                margin-bottom: 20px;
+            }
+            .section-content {
+                width: initial;
+            }
+            .social-menu {
+                margin-top: 20px;
+            }
+        }
+    }
+    footer {
+        height: initial;
+        .menu-content {
+            flex-direction: column;
+            padding: 3em 0;
+            .menu-footer {
+                flex-direction: column;
+                .menu-list {
+                    flex-direction: column;
+                    margin-top: 2.625em;
+                    .list-item {
+                        margin-left: initial;
+                        margin-bottom: 2em;;
+                    }
+                }
+            }
+        }
+    }
+}
