@@ -7,8 +7,11 @@
 
     main {
         margin-bottom: 2.5em;
-    .hero .hero-content {
-        bottom: 274px;
+    .hero {
+        margin-bottom: 2.5em;
+        .hero-content {
+            bottom: 274px;
+        }
     }
     .about {
         margin-top: 6.2em;

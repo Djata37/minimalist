@@ -1292,6 +1292,9 @@ footer .menu-content .social-menu .social-list .social-item .social-link {
   main {
     margin-bottom: 2.5em;
   }
+  main .hero {
+    margin-bottom: 2.5em;
+  }
   main .hero .hero-content {
     bottom: 274px;
   }
